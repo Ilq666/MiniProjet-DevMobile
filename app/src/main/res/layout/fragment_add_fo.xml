@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FA6C5">
+
+    <TextView
+        android:id="@+id/txtAjout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Ajout d'article"
+        android:textColor="#164971"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/nomArticleET"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAjout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:autofillHints="@string/EtAddFo"
+        android:hint="@string/EtAddFo"
+        android:inputType="text"
+        android:textColor="#100F0F"
+        android:textColorHint="#151515" />
+
+    <Spinner
+        android:id="@+id/spinnerCat"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomArticleET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/prixET"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerCat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Prix"
+        android:inputType="numberDecimal"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#070707" />
+
+    <EditText
+        android:id="@+id/qteArticle"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prixET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autofillHints="Qte"
+        android:hint="Qte"
+        android:inputType="number"
+        android:textColorHint="#050505" />
+
+    <EditText
+        android:id="@+id/descArticle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qteArticle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:autofillHints="Description"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#0C0C0C" />
+
+    <Button
+        android:id="@+id/ajoutBT"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descArticle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="120dp"
+        android:background="#1F5681"
+        android:text="Ajouter" />
+
+
+</RelativeLayout>

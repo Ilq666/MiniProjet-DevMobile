@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0C8A2">
+
+    <TextView
+        android:id="@+id/LblComUtilAc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:text="Commandes"
+        android:textColor="#0B8F83"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/ContainerCom"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/LblComUtilAc"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/ContainerCommandes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/S" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/Suppression"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ContainerCom"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="60dp"
+        android:background="#085A53"
+        android:text="Supprimer"
+        android:textColor="#EFF4EF" />
+</RelativeLayout>
